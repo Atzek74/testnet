@@ -35,4 +35,13 @@ creo file bitcoin.conf
 
   modifico .sample
 
+creo rete overlay
+
+  	docker network create --driver=overlay --subnet=10.0.1.0/24 --gateway=10.0.1.254 --attachable nodo
+
+creo immagini
+
+avvio container
+
+
   
