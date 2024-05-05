@@ -45,6 +45,10 @@ creo file bitcoin.conf
 
 creo immagini
 
+copio eventuali dati
+
+	rsync -a --remove-source-files --progress ...
+
 avvio container
 
 
