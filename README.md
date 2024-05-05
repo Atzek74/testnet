@@ -18,6 +18,10 @@ inizializzo nodo worker
       
     docker swarm join-token worker
 
+creo rete overlay
+
+  	docker network create --driver=overlay --subnet=10.0.1.0/24 --gateway=10.0.1.254 --attachable nodo
+
 
 creo file bitcoin.conf
 
@@ -35,9 +39,9 @@ creo file bitcoin.conf
 
   modifico .sample
 
-creo rete overlay
+  
 
-  	docker network create --driver=overlay --subnet=10.0.1.0/24 --gateway=10.0.1.254 --attachable nodo
+
 
 creo immagini
 
