@@ -1,5 +1,7 @@
 # docker build -f ./dockerfile2 -t atzek74/electrs2:2 .
-#docker run -itd  --name electrs --restart always --network nodo -v $PWD/.electrs:/root/.electrs --ip=10.0.1.3 atzek74/electrs2:2
+# docker pull atzek74/electrs2:2
+# docker run -itd  --name electrs --restart always --network nodo -v $PWD/.electrs:/root/.electrs --ip=10.0.1.3 atzek74/electrs2:2
+
 FROM debian
 RUN apt update && apt -y upgrade
 RUN apt install -y cargo 
