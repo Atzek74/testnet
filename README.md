@@ -1,4 +1,5 @@
 installo Docker:
+
 da utente root
 
     apt install curl -y
@@ -9,11 +10,13 @@ aggiungo utente a gruppo docker
 
     usermod -aG docker <user>
 
-inizializzo nodo manager swarm
+inizializzo nodo manager swarm:
+
 da utente non root    
+
     docker swarm init
 
-inizializzo nodo worker
+inizializzo nodo worker:
   
     docker join ... 
   
@@ -21,7 +24,7 @@ inizializzo nodo worker
       
     docker swarm join-token worker
 
-creo rete overlay
+creo rete overlay:
 
   	docker network create --driver=overlay --subnet=10.0.1.0/24 --gateway=10.0.1.254 --attachable nodo
 
