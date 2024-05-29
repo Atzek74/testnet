@@ -1,5 +1,7 @@
 installo Docker
 
+    apt install curl -y
+	
     curl -ssl https://get.docker.com | bash
   
 aggiungo utente a gruppo docker
