@@ -1,4 +1,5 @@
-installo Docker
+installo Docker:
+da utente root
 
     apt install curl -y
 	
@@ -6,10 +7,10 @@ installo Docker
   
 aggiungo utente a gruppo docker
 
-    sudo usermod -aG docker <user>
+    usermod -aG docker <user>
 
 inizializzo nodo manager swarm
-    
+da utente non root    
     docker swarm init
 
 inizializzo nodo worker
